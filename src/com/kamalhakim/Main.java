@@ -6,6 +6,7 @@ import com.kamalhakim.state.SelectionTool;
 public class Main {
 
     public static void main(String[] args) {
+    	/* State pattern */
 	    Canvas canvas = new Canvas();
 	    canvas.setCurrentTool(new BrushTool());
 	    canvas.mouseDown();
@@ -14,5 +15,7 @@ public class Main {
 	    canvas.setCurrentTool(new SelectionTool());
 	    canvas.mouseDown();
 	    canvas.mouseUp();
+
+		/* State pattern end */
     }
 }
